@@ -36,6 +36,12 @@ define([
     App.setParam( 'go-to-default-route-after-refresh', false ); // Don't automatically show default screen after a refresh
     App.setParam( 'custom-screen-rendering', true ); // Don't use default transitions and displays for screens
 
+
+    App.addCustomRoute( 'home', 'home' );
+    App.filter( 'default-route', function( default_route ) {
+        default_route = 'home';
+        return default_route ;
+    } );
     
     
     /*
