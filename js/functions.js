@@ -44,6 +44,7 @@ define([
     } );
 
     App.addCustomRoute( 'info', 'info' );
+    App.addCustomRoute( 'ansprechpartner', 'ansprechpartner' );
     
     /*
      * Init
