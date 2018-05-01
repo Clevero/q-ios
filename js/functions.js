@@ -42,7 +42,8 @@ define([
         default_route = 'home';
         return default_route ;
     } );
-    
+
+    App.addCustomRoute( 'info', 'info' );
     
     /*
      * Init
