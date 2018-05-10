@@ -110,7 +110,7 @@ a {
     bottom: 0px;
     left: 0px;
 	width: 100%;
-    background-color: #fff;
+    background-color: #F8F8F8;
     -webkit-overflow-scrolling:touch; /* Enables scrolling bounce effect when reaching top or bottom */
 }
 
