@@ -130,6 +130,19 @@ define( [ 'jquery', 'core/theme-app', 'core/modules/authentication' ], function(
     } );
 
 
+    App.filter( 'template-args', function( template_args, view_type, view_template ) {
+
+            //Make "special_data" available in the "special-category-template.html" template:
+            if( view_template == 'meine-schichten' ) {
+                var current_user = Auth.getCurrentUser();
+
+                template_args.meine_schichten = current_user.info.meine_schichten;
+                template_args.test = current_user.info.test;
+            }
+
+            return template_args;
+        } );
+    
     /**************************************************************************
      * User connection validity
      */
