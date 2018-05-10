@@ -425,6 +425,7 @@ define([
 
         }
 
+        // Page
         if (current_screen.screen_type=="page") {
             
             // Change nav bar title
@@ -433,6 +434,13 @@ define([
                 $('#app-header > h1').html('');
             }
 
+            $('#app-header > h1').html(current_screen.label);
+
+        }
+
+        // Single
+        if(current_screen.screen_type=="single"){
+            $('#panel-header > h1').html(current_screen.label);
         }
                         
         if (current_screen.screen_type=="single" || current_screen.screen_type=="page") {
