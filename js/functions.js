@@ -24,7 +24,10 @@ define([
     'root/config',
     'theme/js/moment.min',
     'theme/js/velocity.min',
-    'theme/js/jquery.fitvids'
+    'theme/js/jquery.fitvids',
+    'theme/js/auth/auth-pages',
+    'theme/js/auth/simple-login',
+    'theme/js/auth/premium-posts'
     ], function($,App,Storage,TemplateTags,Config,Moment,Velocity) {
 
     
@@ -529,7 +532,10 @@ define([
     
     // Get more button events
     $( '#app-layout' ).on( 'touchend', '#get-more-button', getMoreButtonTapOff);
-    
+
+
+
+
     /*
      * @desc Display default image if an error occured when loading an image element (eg. offline)
      * 1. Binding onerror event doesn't seem to work properly in functions.js
