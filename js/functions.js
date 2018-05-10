@@ -49,6 +49,7 @@ define([
     App.addCustomRoute( 'info', 'info' );
     App.addCustomRoute( 'ansprechpartner', 'ansprechpartner' );
     App.addCustomRoute( 'meldezentrale', 'meldezentrale' );
+    App.addCustomRoute( 'meine-schichten', 'meine-schichten' );
     
     
     /*
