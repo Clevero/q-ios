@@ -46,6 +46,25 @@ define([
         return default_route ;
     } );
 
+    App.filter( 'template', function( template, current_screen ) {
+
+        // Detect single
+        if ( current_screen.screen_type === 'single' ) {
+
+            // Get post categories (added in add-custom-data.php)
+            var post_categories = current_screen.data.post.categories;
+
+            // Call template for specific category's slug
+            if ( post_categories.indexOf('orte') !== -1 ){
+                template = 'ort'; // corresponds to orte.html
+            }
+
+        }
+
+        return template;
+
+    });
+
     App.addCustomRoute( 'info', 'info' );
     App.addCustomRoute( 'ansprechpartner', 'ansprechpartner' );
     App.addCustomRoute( 'meldezentrale', 'meldezentrale' );
