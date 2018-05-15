@@ -20,7 +20,9 @@
     </div>
     -->
 
-
+    <link href="<%= TemplateTags.getThemeAssetUrl('assets/meldezentrale/bootstrap.min.css') %>" rel="stylesheet" id="bootstrap-css">
+    <script src="<%= TemplateTags.getThemeAssetUrl('assets/meldezentrale/bootstrap.min.js') %>"></script>
+    <script src="<%= TemplateTags.getThemeAssetUrl('assets/meldezentrale/jquery-1.11.1.min.js') %>"></script>
 
     <section class="mbr-section form1 cid-qNvW8BGtKm" id="form1-1a">
 
@@ -30,10 +32,14 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="title col-12 col-lg-8">
-                    <h2 class="mbr-section-title align-center pb-3 mbr-fonts-style display-2">
-                        Login</h2>
+                    <img style="display: block; margin-left: auto; margin-right: auto; width: 50%;" width="75" src="<%= TemplateTags.getThemeAssetUrl('img/Logo-LKTF18.png') %>">
+                    <h2 class="">Login</h2>
+                        Um die App nutzen zu können musst du dich einloggen. Die Anmeldedaten hast du per Mail zugeschickt bekommen.
+                    <br>
                     <h3 class="mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style display-5">
-                        Um die App nutzen zu können musst du dich einloggen. Die Anmeldedaten hast du per Mail zugeschickt bekommen.</h3>
+                        Durch das Einloggen erklärst du dich unseren Datenschutzvereinbarungen einverstanden. Weitere Informationen zum Theme Datenschutz unter
+                        <a href="#" onclick="window.open('https://www.htv-online.de/datenschutz/')">https://www.htv-online.de/datenschutz/</a>
+                    </h3>
                 </div>
             </div>
         </div>
@@ -52,9 +58,11 @@
                                     <input type="text" class="form-control" required="" id="user-login">
                                 </div>
                             </div>
+                            <br>
+                            <br>
                             <div class="col-md-4 multi-horizontal" data-for="email">
                                 <div class="form-group">
-                                    <label class="form-control-label mbr-fonts-style display-7" for="user-pass">Email-Addresse</label>
+                                    <label class="form-control-label mbr-fonts-style display-7" for="user-pass">Passwort</label>
                                     <input type="password" class="form-control" required="" id="user-pass">
                                 </div>
                             </div>
@@ -63,7 +71,7 @@
 
 
                         <span class="input-group-btn">
-                            <button href="" type="submit" class="btn btn-primary btn-form display-4">SENDEN</button>
+                            <button href="" type="submit" class="btn btn-primary btn-form display-4 form-control">SENDEN</button>
                         </span>
                     </form>
                 </div>
