@@ -11,9 +11,6 @@
 
 <div id="content" class="content single-template">
 
-    <% console.log(test); %>
-
-
 
     <section class="timeline1 cid-qLJjNj6Byc" id="timeline1-n">
 
@@ -59,9 +56,9 @@
                         <h4 class="mbr-timeline-title pb-3 mbr-fonts-style display-5">
                             <%
                             if(meine_schichten[i][k][3] != -1){
-                            %><a href="<%= TemplateTags.getPostLink(meine_schichten[i][k][3]) %>"><%= meine_schichten[i][k][2] %></a><%
+                                %><%= meine_schichten[i][k][2] %><%
                             }else{
-                            %><%= meine_schichten[i][k][2] %><%
+                                %><%= meine_schichten[i][k][2] %><%
                             }
                             %>
                             <%= console.log("url: " + TemplateTags.getPostLink('141') ) %>
